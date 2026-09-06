@@ -1,0 +1,41 @@
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local copies of the Kaggle dataset (not part of this repository)
+train.csv
+test.csv
+sample_submission.csv
+train_images/
+test_images/
+
+# Resumable training state and transient logs
+last_checkpoint.pth
+checkpoints/
+*.log
+
+
+# Full test overlays are large; keep only the smaller overlays1 sample in Git.
+predictions/test_predictions/overlays/
