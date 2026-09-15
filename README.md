@@ -8,6 +8,10 @@
 
 This project implements an end-to-end **semantic segmentation pipeline for industrial steel surface defect detection** using the **Severstal Steel Defect Detection** dataset.
 
+## Project Goal
+
+The goal of this project was to build and evaluate a from-scratch U-Net model that can locate and classify defects on steel surfaces at the pixel level. This supports automated quality inspection by identifying the precise area and type of each defect, without using pre-trained models or weights.
+
 The primary goal of this project is not only to achieve accurate segmentation, but also to **design and implement a complete segmentation architecture from scratch without relying on pre-trained models or pre-trained weights**.
 
 The U-Net architecture, including its encoder, bottleneck, decoder, upsampling blocks, skip connections, and output layer, is implemented directly in PyTorch.
