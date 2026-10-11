@@ -8,31 +8,6 @@
 
 This project implements an end-to-end **semantic segmentation pipeline for industrial steel surface defect detection** using the **Severstal Steel Defect Detection** dataset.
 
-## Project Goal
-
-The goal of this project was to build and evaluate a from-scratch U-Net model that can locate and classify defects on steel surfaces at the pixel level. This supports automated quality inspection by identifying the precise area and type of each defect, without using pre-trained models or weights.
-
-The primary goal of this project is not only to achieve accurate segmentation, but also to **design and implement a complete segmentation architecture from scratch without relying on pre-trained models or pre-trained weights**.
-
-The U-Net architecture, including its encoder, bottleneck, decoder, upsampling blocks, skip connections, and output layer, is implemented directly in PyTorch.
-
-The objective is not simply to determine whether an image contains a defect, but to perform **pixel-level segmentation** and identify the spatial region belonging to each defect class.
-
-## Key Results
-
-The selected checkpoint achieved the following **validation-set** performance:
-
-| Metric | Score |
-| ------ | -----: |
-| Mean Defect Dice | **0.60492** |
-| Mean Defect IoU | **0.45045** |
-| Validation Loss | **0.24755** |
-
-The model was trained from scratch without pretrained weights. The notebook also runs inference on `test_images`,
-but ground-truth masks are not available for that test set in this pipeline. Therefore, test inference produces
-predictions, colored masks, and overlays for qualitative inspection only; the metrics above are validation metrics,
-not test metrics.
-
 ## Visual Demo
 
 The examples below provide a quick visual comparison of the original steel image, the ground-truth mask, the U-Net
@@ -61,6 +36,31 @@ prediction, and the prediction overlay with IoU.
 <img src="predictions/test_predictions/colored_masks/000ccc2ac_colored_mask.png" alt="Colored mask sample 000ccc2ac" width="100%">
 
 <img src="predictions/test_predictions/colored_masks/003c5da97_colored_mask.png" alt="Colored mask sample 003c5da97" width="100%">
+
+## Project Goal
+
+The goal of this project was to build and evaluate a from-scratch U-Net model that can locate and classify defects on steel surfaces at the pixel level. This supports automated quality inspection by identifying the precise area and type of each defect, without using pre-trained models or weights.
+
+The primary goal of this project is not only to achieve accurate segmentation, but also to **design and implement a complete segmentation architecture from scratch without relying on pre-trained models or pre-trained weights**.
+
+The U-Net architecture, including its encoder, bottleneck, decoder, upsampling blocks, skip connections, and output layer, is implemented directly in PyTorch.
+
+The objective is not simply to determine whether an image contains a defect, but to perform **pixel-level segmentation** and identify the spatial region belonging to each defect class.
+
+## Key Results
+
+The selected checkpoint achieved the following **validation-set** performance:
+
+| Metric | Score |
+| ------ | -----: |
+| Mean Defect Dice | **0.60492** |
+| Mean Defect IoU | **0.45045** |
+| Validation Loss | **0.24755** |
+
+The model was trained from scratch without pretrained weights. The notebook also runs inference on `test_images`,
+but ground-truth masks are not available for that test set in this pipeline. Therefore, test inference produces
+predictions, colored masks, and overlays for qualitative inspection only; the metrics above are validation metrics,
+not test metrics.
 
 The complete pipeline includes:
 
