@@ -870,9 +870,7 @@ The `predictions/test_predictions/` folder contains the visual outputs generated
 The `overlays1/` folder is a GitHub-friendly sample of the full `overlays/` folder. The complete overlay collection is kept
 available separately because its size is too large for convenient GitHub browsing.
 
-To download all full-size overlay predictions, use the Google Drive folder:
-
-[Download the complete overlays folder from Google Drive](https://drive.google.com/drive/folders/19-xml2Idd9Um1Fl-cd_sAmL_eBNvSwgt?usp=sharing)
+For access to the complete full-size overlay predictions, please contact me.
 
 The notebook writes its full training artifacts to:
 
@@ -894,8 +892,8 @@ The notebook writes its full training artifacts to:
 
 The repository contains a selected copy of these outputs: `best_model.pth` at the root and the files under
 `predictions/`. The local `predictions/test_predictions/` directory contains the color masks, the complete local
-overlay collection, and the smaller `overlays1/` sample prepared for GitHub. The full `overlays/` collection can also
-be downloaded from the Google Drive link above.
+overlay collection, and the smaller `overlays1/` sample prepared for GitHub. Please contact me for access to the
+complete `overlays/` collection.
 
 ---
 
